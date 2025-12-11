@@ -236,6 +236,19 @@
             .nav-container { bottom: 1.5rem; width: 90%; }
             .floating-dock { width: 100%; justify-content: space-around; }
         }
+
+        .project-link {
+            text-decoration: none; /* Remove underline from the anchor tag */
+            color: inherit; /* Inherit the white text color */
+        }
+
+        /* Ensure hover effects still work on the card */
+        .project-link:hover .card {
+            /* Keep the original hover styles defined for .card */
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+        }
     </style>
 </head>
 <body>
@@ -276,36 +289,45 @@
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <article class="glass-panel card">
-                    <h3>OnPoint Travel</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">A travel agency web application.</p>
-                    <div class="tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Next.js</span>
+       <section id="projects">
+                    <h2>Selected Works</h2>
+                    <div class="grid">
+                        
+                        <a href="https://onpointtravel.vercel.app/" target="_blank" class="project-link">
+                            <article class="glass-panel card">
+                                <h3>OnPoint Travel</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">A travel agency web application booking platform.</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">D3.js</span>
+                                </div>
+                            </article>
+                        </a>
+                
+                        <a href="https://wildwestadv.vercel.app/" target="_blank" class="project-link">
+                            <article class="glass-panel card">
+                                <h3>Wild West Adventures web App</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">designed and deployed a responsive travel booking platform. </p>
+                                <div class="tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                            </article>
+                        </a>
+                
+                        <a href="https://live-url-ios-app.com" target="_blank" class="project-link">
+                            <article class="glass-panel card">
+                                <h3>F1 Telementry Generator</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">A Formula 1 telementry data simulator for live recreation</p>
+                                <div class="tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Spring</span>
+                                </div>
+                            </article>
+                        </a>
+                
                     </div>
-                </article>
-                <article class="glass-panel card">
-                    <h3>AI Image Gen</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">SaaS wrapper for Stable Diffusion API with gallery view.</p>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </article>
-                <article class="glass-panel card">
-                    <h3>E-Commerce iOS App</h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Native mobile application with AR product preview.</p>
-                    <div class="tags">
-                        <span class="tag">SwiftUI</span>
-                        <span class="tag">ARKit</span>
-                    </div>
-                </article>
-            </div>
         </section>
-
         <section id="contact">
             <div class="glass-panel" style="padding: 3rem; text-align: center;">
                 <h2>Let's Connect</h2>
